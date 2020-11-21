@@ -1,0 +1,51 @@
+DESCRIPTION
+========================================
+mote is good ... it `s mean that isn`t Zero in 4_DP_List:
+
+Section 0
+	sometimes to do:
+		init not in main.py
+
+Section 1
+	Questiont:
+		Mote - have some DPs.
+		Is it True ?
+	
+	Take all DPs for this Mote
+
+	Answer:
+		Yes.
+		If DP_list is not empty.
+
+Section 2
+	Questiont:
+		Each DP is equal to sample.
+		Is it True ?
+	
+	remove invalid DPs from DP_list from Section 1
+
+	Answer:
+		Yes.
+		If DP_list is not empty.
+
+Section 3
+	Questiont:
+		The period between neighbor DPs is equal to sample.
+		Is it True ?
+	
+	remove invalid DPs from DP_list from Section 2
+
+	Answer:
+		Yes.
+		If DP_list is not empty.
+
+Section 4
+	Questiont:
+		the parameter`s behavior of each DP is equal to sample 
+		Is it True ?
+	
+	remove invalid DPs from DP_list from Section 3
+
+	Answer:
+		Yes.
+		If DP_list is not empty.
