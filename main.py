@@ -1,7 +1,10 @@
 import sys
+import resource
+import resource
 
 
 def main():
+	_config = modules.config('setting.ini')
 	return 0
 
 
