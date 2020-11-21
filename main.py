@@ -1,12 +1,14 @@
 import sys
-import resource
-import resource
-
+import m_checker.modules as my_
+import configparser
 
 def main():
-	_config = modules.config('setting.ini')
-	return 0
+	_config = my_.config('settings.ini')
+	_ts
 
+	print(_config['API']['dev'])
+
+	return 0
 
 
 if __name__ == '__main__':

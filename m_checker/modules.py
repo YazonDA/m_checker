@@ -1,8 +1,8 @@
 import configparser
 
 
-def config(_config):
+def config(config_ini):
 	parser = configparser.ConfigParser()
-	parser.read(_config)
+	parser.read(config_ini)
 	return parser
 

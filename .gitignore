@@ -3,4 +3,3 @@ slave/*
 __pycache__/*
 *.pyc
 LICENSE
-.gitignore
