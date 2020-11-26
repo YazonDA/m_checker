@@ -1,3 +1,11 @@
+# Section 0
+'''
+Args:
+	config.ini path/name
+Answer:
+	Mote (object)
+'''
+
 import configparser
 
 

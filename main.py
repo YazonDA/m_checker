@@ -2,21 +2,28 @@ import sys
 import m_checker.section_00 as section_00
 import m_checker.section_01 as section_01
 import m_checker.section_02 as section_02
+import logging
 
 def main():
+	line_format = "[%(asctime)s] %(levelname)s: %(message)s"
+	logging.basicConfig(filename="m_checker.log",
+						format=line_format,
+						level=logging.INFO)
+
 	tst_mote = section_00.todo('settings.ini')
 	
-	print(f'Test for Mote {tst_mote.DevEUI[-6:]} is starting!\n')
+	logging.info('')
+	logging.info(f'Test for Mote {tst_mote.DevEUI[-6:]} is starting!')
 	
-	print(f'Section 0:\n\tMote-object is created!\n')
+	logging.info(f'Section 0: Mote-object is created!')
 	
-	answer_01 = section_01.todo(tst_mote)
-	print(f'Section 1:\n\tMote have some DPs. Is it True?\n\t{answer_01}\n')
+	section_01.todo(tst_mote)
+	logging.info(f'Section 1: Mote have {len(tst_mote.DP)} some DPs.')
 	
-	answer_02 = section_02.todo(tst_mote)
-	print(f'Section 2:\n\tEach DP is equal to sample. Is it True?\n\t{answer_02}\n')
-	
+	section_02.todo(tst_mote)
+	logging.info(f'Section 2: Mote have {len(tst_mote.DP)} DPs where each DP is equal to sample.')
 
+	logging.shutdown()
 	return 0
 
 

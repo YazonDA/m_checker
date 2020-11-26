@@ -3,3 +3,4 @@ slave/*
 __pycache__/*
 *.pyc
 LICENSE
+*.log

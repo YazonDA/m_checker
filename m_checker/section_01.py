@@ -20,8 +20,6 @@ def todo(_mote):
 		params = _mote.DP.setdefault(_dp['link_id'],{})
 		params[_dp['param_id']] = {'port_number': _dp['port_number'], 'data_timestamp': _dp['data_timestamp'], 'value': _dp['value']}
 
-	return bool(len(_mote.DP))
-
 
 def get_dp(_mote):
 	answer = []
