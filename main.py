@@ -2,6 +2,7 @@ import sys
 import m_checker.section_00 as section_00
 import m_checker.section_01 as section_01
 import m_checker.section_02 as section_02
+import m_checker.section_03 as section_03
 import logging
 
 def main():
@@ -22,6 +23,11 @@ def main():
 	
 	section_02.todo(tst_mote)
 	logging.info(f'Section 2: Mote have {len(tst_mote.DP)} DPs where each DP is equal to sample.')
+
+	dp_chain = section_03.todo(tst_mote)
+	logging.info(f'Section 3: Mote have {len(tst_mote.DP)} DPs .')
+	logging.info(f'Section 3: Mote have {len(dp_chain)} chain of Date from {min(dp_chain[1])} to {max(dp_chain[1])}')
+
 
 	logging.shutdown()
 	return 0
