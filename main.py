@@ -24,8 +24,9 @@ def main():
 	section_02.todo(tst_mote)
 	logging.info(f'Section 2: Mote have {len(tst_mote.DP)} DPs where each DP is equal to sample.')
 
-	section_03.todo(tst_mote)
+	dp_chain = section_03.todo(tst_mote)
 	logging.info(f'Section 3: Mote have {len(tst_mote.DP)} DPs .')
+	logging.info(f'Section 3: Mote have some chain of Date {dp_chain}')
 
 	logging.shutdown()
 	return 0
