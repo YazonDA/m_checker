@@ -26,7 +26,8 @@ def main():
 
 	dp_chain = section_03.todo(tst_mote)
 	logging.info(f'Section 3: Mote have {len(tst_mote.DP)} DPs .')
-	logging.info(f'Section 3: Mote have some chain of Date {dp_chain}')
+	logging.info(f'Section 3: Mote have {len(dp_chain)} chain of Date from {min(dp_chain[1])} to {max(dp_chain[1])}')
+
 
 	logging.shutdown()
 	return 0

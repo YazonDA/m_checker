@@ -4,3 +4,4 @@ __pycache__/*
 *.pyc
 LICENSE
 *.log
+tst.py
