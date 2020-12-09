@@ -1,17 +1,22 @@
 DESCRIPTION
 ========================================
-mote is good ... it `s mean that isn`t Zero in 4_DP_List:
+mote is good ... it `s mean that isn`t Zero in self.DP after Section 4:
 
 Section 0
-	sometimes to do:
-		init not in main.py
-		create Mote
+	task:
+		init/create Mote
 
 	Argument:
-	name/path of setting.ini
+		DevEUI (maybe only last 6 digit)
+		#name/path of setting.ini
+
+	find true server for this mote;
+	find true app for this mote;
+	take true data for this Mote from app_dict;
+	then you can to init Mote-object
 
 	Return:
-	Mote-object
+		Mote-object
 
 Section 1
 	Questiont:
