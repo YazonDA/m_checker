@@ -1,0 +1,70 @@
+lorawan@d5636:/opt/smartiko/bi./search_mote.sh 16c00000109083
+NC
+     to_hex     |    to_hex     
+----------------+---------------
+ 16c00000109083 | 7000100000004
+(1 row)
+
+NS 1703
+ to_hex | to_hex | to_hex | networksessionkey | downmsgseqno | upmsgseqno | to_hex 
+--------+--------+--------+-------------------+--------------+------------+--------
+(0 rows)
+
+NS 1705
+     to_hex     |    to_hex     | to_hex | fintkey | sintkey | networksessionkey | downmsgseqno | upmsgseqno |      to_hex      
+----------------+---------------+--------+---------+---------+-------------------+--------------+------------+------------------
+ 16c00000109083 | 7000100000004 |        | 0       | 0       |                   |          243 |        264 | aad00dba1900008a
+(1 row)
+
+       eui        | joinnonce |             fintkey              |             sintkey              |        networksessionkey         | networkaddress | timestamp  
+------------------+-----------+----------------------------------+----------------------------------+----------------------------------+----------------+------------
+ 6403555721252995 |         0 | d28f2b3de25a22062834f92bb4d6175f | 594bd9a7c89345b2220944ce8a479316 | 8c36c1423dd1c93c2de15a2daee55937 |        1085571 | 1582788674
+(1 row)
+
+AS 4000
+ to_hex | to_hex | appkey 
+--------+--------+--------
+(0 rows)
+
+ to_hex | to_hex | sessionkey | to_hex 
+--------+--------+------------+--------
+(0 rows)
+
+AS 4001
+ to_hex | to_hex | nwkkey | appkey 
+--------+--------+--------+--------
+(0 rows)
+
+     to_hex     |    to_hex     |            sessionkey            | to_hex 
+----------------+---------------+----------------------------------+--------
+ 16c00000109083 | 7000100000004 | bc6358332d245959e50e4da9204f1fa1 | 109083
+(1 row)
+
+ to_hex | nonce 
+--------+-------
+(0 rows)
+
+CS 5005
+     to_hex     |    to_hex     | lastrxframe |                accid                 | mote_descriptors_id 
+----------------+---------------+-------------+--------------------------------------+---------------------
+ 16c00000109083 | 7000100000004 |    19087087 | 7e725742-50fe-484f-80b6-2ff956395661 |                  73
+(1 row)
+
+ mote_id | index | type | tuple_index | param_code | param_len | param_increment_len | param_sign | param_increment_sign 
+---------+-------+------+-------------+------------+-----------+---------------------+------------+----------------------
+(0 rows)
+
+CS 5004
+     to_hex     |    to_hex     | lastrxframe |                accid                 | mote_descriptors_id 
+----------------+---------------+-------------+--------------------------------------+---------------------
+ 16c00000109083 | 7000100000004 |    17098384 | 7e725742-50fe-484f-80b6-2ff956395661 |                    
+(1 row)
+
+ mote_id | index | type | tuple_index | param_code | param_len | param_increment_len | param_sign | param_increment_sign 
+---------+-------+------+-------------+------------+-----------+---------------------+------------+----------------------
+(0 rows)
+
+CS 5006
+ to_hex | to_hex | lastrxframe 
+--------+--------+-------------
+(0 rows)

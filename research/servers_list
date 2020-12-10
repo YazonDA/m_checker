@@ -1,0 +1,9 @@
+lorawan@d5636:/opt/smartiko/bi./search_mote.sh 16c00000109083
+NC
+NS 1703
+NS 1705
+AS 4000
+AS 4001
+CS 5005
+CS 5004
+CS 5006
