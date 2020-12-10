@@ -10,6 +10,9 @@ Section 0
 		DevEUI (maybe only last 6 digit)
 		#name/path of setting.ini
 
+	'''А вообще, у тебя же доступ на ВЭС есть. Запускаешь оттуда:
+				/opt/smartiko/bin/search_mote.sh <16c00000xxxxxx>
+				Узнаешь, на каких серверах заведен и на каком аппе.'''
 	find true server for this mote;
 	find true app for this mote;
 	take true data for this Mote from app_dict;
